@@ -1,0 +1,58 @@
+<h2 mat-dialog-title >{{topTitle}}</h2>
+
+<div mat-dialog-content>
+   <form [formGroup]="employeeForm">
+    <mat-form-field appearance="outline">
+        <mat-label>Full Name</mat-label>
+        <input formControlName="name" matInput placeholder="full name">
+      </mat-form-field>
+      <label for="">Gender</label>
+      <mat-radio-group formControlName="gender" aria-label="Select an option">
+        <mat-radio-button value="Male">Male</mat-radio-button>
+        <mat-radio-button value="Female">Female</mat-radio-button>
+      </mat-radio-group>
+      <mat-form-field appearance="outline">
+        <mat-label>Email</mat-label>
+        <input formControlName="email" matInput placeholder="email Address">
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label>Phone Number</mat-label>
+        <input formControlName="phoneNumber" matInput placeholder="phoneNumber">
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label>Role</mat-label>
+        <input formControlName="role" matInput placeholder="role">
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label>Department</mat-label>
+        <mat-select formControlName="department" placeholder="departement">
+            <mat-option value="It">It</mat-option>
+            <mat-option value="Finance">finance</mat-option>
+            <mat-option value="store">store</mat-option>
+            <mat-option value="managment">managment</mat-option>
+        </mat-select>
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label>Employment</mat-label>
+        <mat-select formControlName="employment" placeholder="Employment">
+            <mat-option value="contractual">contractual</mat-option>
+            <mat-option value="Junior">Junior</mat-option>
+            <mat-option value="senior">senior</mat-option>
+        </mat-select>
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label>Salary</mat-label>
+        <input formControlName="salary" matInput placeholder="salary">
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label>Start Date</mat-label>
+        <input formControlName="startDate" matInput [matDatepicker]="picker">
+        <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+      </mat-form-field>
+   </form>
+</div>
+<div mat-dialog-action [align]="'end'">
+    <button mat-raised-button color="primary" (click)="addEmployee()">{{actionBtn}}</button>
+    <button style="margin: 8px;" mat-raised-button color="warn" mat-dialog-close>close</button>
+</div>

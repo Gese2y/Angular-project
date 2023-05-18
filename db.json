@@ -1,0 +1,50 @@
+{
+  "EmployeeList": [
+    {
+      "name": "rdtfgf",
+      "gender": "Female",
+      "email": "yab@gmail.com",
+      "phoneNumber": "09234234",
+      "role": "programer",
+      "department": "It",
+      "employment": "contractual",
+      "salary": "8999",
+      "startDate": "2023-05-24T21:00:00.000Z",
+      "id": 3
+    },
+    {
+      "name": "dfgdfg",
+      "gender": "Male",
+      "email": "geseseteshome21@gmail.com",
+      "phoneNumber": "0964434",
+      "role": "dfgrsdg",
+      "department": "Finance",
+      "employment": "Junior",
+      "salary": "344",
+      "startDate": "2023-05-25T21:00:00.000Z",
+      "id": 4
+    },
+    {
+      "name": "ghhj",
+      "gender": "Male",
+      "email": "geseseteshome21@gmail.com",
+      "phoneNumber": "097665",
+      "role": "jhkhkj",
+      "department": "Finance",
+      "employment": "Junior",
+      "salary": "5676657",
+      "startDate": "2023-05-17T21:00:00.000Z",
+      "id": 5
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
